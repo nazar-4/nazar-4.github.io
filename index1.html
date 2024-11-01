@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kreativ Sign-Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">Kreativ</div>
+    <h2>Let's get you started</h2>
+    <form action="#">
+      <div class="form-group">
+        <label for="name">Full name</label>
+        <input type="text" id="name" placeholder="Ade Tiger" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email" placeholder="yourname@email.com" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone number</label>
+        <div class="phone-input-group">
+          <div class="country-code">
+            <img src="https://flagcdn.com/w320/ua.png" alt="UA Flag">
+            +380
+          </div>
+          <input type="tel" id="phone" placeholder="800 2738 9700" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password">Create password</label>
+        <input type="password" id="password" placeholder="Password" required>
+        <div class="password-info">Password must contain a minimum of 8 characters<br>Password must contain at least one symbol e.g. @, !</div>
+      </div>
+      <div class="form-group">
+        <label for="location">Location <span style="color: #888">(Optional)</span></label>
+        <select id="location">
+          <option value="">Select Location</option>
+          <option value="Ivano-Frankivsk">Ivano-Frankivsk</option>
+          <option value="Kyiv">Kyiv</option>
+          <option value="Kharkiv">Kharkiv</option>
+          <option value="Odesa">Odesa</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+      <button type="submit" class="signup-button">Sign Up</button>
+      <div class="login-link">Already a user? <a href="#">Login</a></div>
+    </form>
+  </div>
+</body>
+</html>
